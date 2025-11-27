@@ -15,7 +15,8 @@ REPOS=(
   "https://github.com/michenriksen/aquatone.git"
   "https://github.com/RedSiege/EyeWitness.git"
   "https://github.com/tomnomnom/waybackurls.git"
-  "https://github.com/SamJoan/droopescan.git"
+  "https://github.com/ajnik/joomla-bruteforce.git"
+  "https://github.com/drego85/JoomlaScan.git"
 )
 
 echo "Cloning all repos into $INSTALL_DIR..."
