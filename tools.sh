@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Directory to install all tools
-INSTALL_DIR="$HOME/my-tools"
+INSTALL_DIR="$HOME/tools"
 mkdir -p "$INSTALL_DIR"
 cd "$INSTALL_DIR"
 
