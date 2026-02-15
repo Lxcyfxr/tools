@@ -19,6 +19,7 @@ REPOS=(
   "https://github.com/drego85/JoomlaScan.git"
   "https://github.com/enjoiz/XXEinjector.git"
   "https://github.com/sboden/droopescan.git" #droopescan fork with python 3.12 support
+  "https://github.com/irsdl/IIS-ShortName-Scanner.git"
 )
 
 echo "Cloning all repos into $INSTALL_DIR..."
