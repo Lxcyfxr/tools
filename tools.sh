@@ -5,7 +5,7 @@ echo "Updating... "
 sudo apt update
 
 #List of Packages
-package_list="wget git curl zoxide fd-find fzf f3 jq gdb eyewitness steghide sherlock golang cupp htop fastfetch gh openssl hcxtools hcxdumptool wifiphisher gobuster strace tor torbrowser-launcher html2text nuclei crackmapexec ripgrep bat"
+package_list="wget git curl zoxide fd-find fzf f3 jq gdb eyewitness steghide sherlock golang cupp htop fastfetch gh openssl hcxtools hcxdumptool wifiphisher gobuster strace tor torbrowser-launcher html2text nuclei crackmapexec ripgrep bat tree"
 
 #Install Packages
 sudo apt install -y $package_list
