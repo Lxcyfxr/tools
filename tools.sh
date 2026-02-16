@@ -1,5 +1,16 @@
 #!/bin/bash
 
+# update system
+echo "Updating... "
+sudo apt update
+
+#List of Packages
+package_list="wget git curl zoxide fd-find fzf f3 jq gdb eyewitness steghide sherlock golang cupp htop fastfetch gh openssl hcxtools hcxdumptool wifiphisher gobuster strace tor torbrowser-launcher html2text nuclei crackmapexec ripgrep bat"
+
+#Install Packages
+sudo apt install -y $package_list
+echo "✅ All packages installed"
+
 # Directory to install all tools
 INSTALL_DIR="$HOME/tools"
 mkdir -p "$INSTALL_DIR"
@@ -24,7 +35,12 @@ REPOS=(
 
 echo "Cloning all repos into $INSTALL_DIR..."
 for repo in "${REPOS[@]}"; do
-  git clone "$repo"
+  repo_name=$(basename "$repo" .git)
+  if [ -d "$repo_name" ]; then
+    echo "⏭️  $repo_name already exists, skipping..."
+  else
+    git clone "$repo"
+  fi
 done
 
 echo "✅ All tools cloned successfully!"
